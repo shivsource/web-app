@@ -1,4 +1,4 @@
-version: 0.2
+version: 0.0
 
 os: linux
 
@@ -12,7 +12,7 @@ hooks:
   BeforeInstall:
     - location: scripts/make_executable.sh
       runas: ubuntu
-      
+
   AfterInstall: 
     - location: scripts/restart_apache.sh
       runas: ubuntu
