@@ -15,8 +15,8 @@ hooks:
 
   AfterInstall: 
     - location: scripts/restart_apache.sh
-      runas: ubuntu
+      runas: root
 
   ApplicationStart:
     - location: scripts/post_deploy.sh
-      runas: ubuntu    
+      runas: root    
