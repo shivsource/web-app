@@ -9,9 +9,9 @@ files:
 
 
 hooks:
-  BeforeInstall:
-    - location: scripts/make_executable.sh
-      runas: ubuntu
+  # BeforeInstall:
+  #   - location: scripts/make_executable.sh
+  #     runas: ubuntu
 
   AfterInstall: 
     - location: scripts/restart_apache.sh
